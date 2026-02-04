@@ -64,13 +64,12 @@ button{
 
 <body>
 
-<!-- Music -->
 <audio autoplay loop>
   <source src="https://cdn.pixabay.com/audio/2022/03/15/audio_7c9bcbdd8f.mp3" type="audio/mpeg">
 </audio>
 
 <div class="card" id="page1">
-    <h2>💘 Will you be my Valentine, Taniya? 💘</h2>
+    <h2>💘 Will you be my Valentine, meri Taniya madam? 💘</h2>
     <br>
     <button class="yes" onclick="openGift()">Yes 💖</button>
     <button class="no" id="noBtn">No 🙈</button>
@@ -80,14 +79,13 @@ button{
     <h2>😌 I knew it!</h2>
     <p>
         <b>Congratulations 💖✨</b><br><br>
-        Taniya, mujhe pehle hi pata tha tum haan kahogi 😉<br><br>
+        Meri Taniya madam, mujhe pehle hi pata tha tum haan kahogi 😉<br><br>
         Tum meri zindagi ka sabse pyara hissa ho 🌸<br><br>
-        Happy Valentine’s Day, Taniya ❤️🌹
+        Happy Valentine’s Day, meri Taniya madam ❤️🌹
     </p>
 </div>
 
 <script>
-// No button bhagta rahega
 const noBtn = document.getElementById("noBtn");
 noBtn.addEventListener("mouseover", ()=>{
     const card = document.querySelector(".card");
@@ -97,13 +95,11 @@ noBtn.addEventListener("mouseover", ()=>{
     noBtn.style.top = Math.random()*maxY + "px";
 });
 
-// Yes button
 function openGift(){
     document.getElementById("page1").style.display="none";
     document.getElementById("page2").style.display="block";
 }
 
-// Floating hearts
 setInterval(()=>{
     const heart = document.createElement("div");
     heart.className="heart";
